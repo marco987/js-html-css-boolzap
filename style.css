@@ -103,18 +103,71 @@ header {
   }
 
 
-
+/* "BLOCCONE" è tutto ciò che sta al di sotto dell'header */
 #bloccone {
   height: calc(100% - 50px);
   display: flex;
   flex-wrap: wrap;
 }
 
+/* ASIDE - elenco chat */
 aside {
   height: 100%;
   width: 350px;
   overflow: auto;
 }
+
+  .alert-notifiche {
+    width: 100%;
+    height: 60px;
+    background-color: #9DE1FE;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .alert-notifiche img {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .cerca-contatti {
+    width: 100%;
+    height: 50px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .cerca-contatti-in {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .cerca-contatti-in img {
+    height: 30px;
+    margin: 0 20px 0 10px;
+  }
+
+  .cerca-contatti-in input {
+    width: 100%;
+    margin-right: 10px;
+    font-size: 1.1em;
+    border-style: inset;
+    border-width: 0;
+  }
+
+  .cerca-contatti-in input:focus {
+    outline: none;
+  }
+
+  
 
 #blocco-messaggi {
   height: 100%;
