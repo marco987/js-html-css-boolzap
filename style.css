@@ -114,7 +114,6 @@ header {
 aside {
   height: 100%;
   width: 350px;
-  overflow: auto;
 }
 
   .alert-notifiche {
@@ -158,7 +157,7 @@ aside {
   .cerca-contatti-in input {
     width: 100%;
     margin-right: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
     border-style: inset;
     border-width: 0;
   }
@@ -167,8 +166,38 @@ aside {
     outline: none;
   }
 
-  
+  /* Contatti in rubrica */
+  .rubrica-contatti {
+    width: 100%;
+    height: calc(100% - 110px);
+    /* 110px = height .alert-notifiche + .cerca-contatti */
+    background-color: #fff;
+    overflow: auto;
+  }
 
+  .contatto {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .contatto:hover {
+    background-color: #CCCCCC;
+    cursor: pointer;
+  }
+
+  .contatto img {
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+
+
+
+/* CHAT in corso e inserimento messaggi */
 #blocco-messaggi {
   height: 100%;
   width: calc(100% - 350px);
@@ -176,13 +205,40 @@ aside {
   flex-wrap: wrap;
 }
 
+
 section {
   width: 100%;
   height: calc(100% - 50px);
   overflow: auto;
+  background-image: url(img/chat-backgroung.png);
 }
 
+
+/* FOOTER cioè Sezione Immissione Messaggio */
 footer {
   width: 100%;
   height: 50px;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+  footer img {
+    height: 40px;
+    margin: 0 10px;
+  }
+
+  footer input {
+    width: 100%;
+    height: 30px;
+    padding: 0 15px;
+    font-size: 1em;
+    border-style: inset;
+    border-width: 0;
+    border-radius: 20px;
+  }
+
+  footer input:focus {
+    outline: none;
+  }
