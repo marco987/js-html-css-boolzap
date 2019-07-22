@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-#contenitore {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
+/* BACKGROUND PRINCIPALI */
 #top-background {
   width: 100vw;
   height: 100px;
@@ -25,6 +21,7 @@
   background-color: #DADBD3;
 }
 
+/* BLOCCO PRINCIPALE */
 main {
   width: 80vw;
   height: calc(100vh - 40px);
@@ -32,9 +29,80 @@ main {
   top: 20px;
 }
 
+/* HEADER */
 header {
   height: 50px;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+  /* Header lato UTENTE */
+  #utente {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .foto-utente {
+    display: flex;
+    align-items: center;
+  }
+
+  .foto-utente img {
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  .icone-utente {
+    display: flex;
+    align-items: center;
+  }
+
+  .icone-utente img {
+    height: 40px;
+  }
+
+  /* Header lato CONTATTO-ATTUALE */
+  #contatto-attuale {
+    height: 100%;
+    width: calc(100% - 350px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-left: solid 1px #CCCCCC;
+  }
+
+  .contatto-utente {
+    display: flex;
+    align-items: center;
+  }
+
+  .contatto-utente img {
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 20px;
+  }
+
+  .stato-contatto p {
+    color: #A1A1A1;
+    font-size: 0.8em;
+  }
+
+  .icone-contatto-utente {
+    display: flex;
+    align-items: center;
+  }
+
+  .icone-contatto-utente img {
+    height: 40px;
+  }
+
+
 
 #bloccone {
   height: calc(100% - 50px);
