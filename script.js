@@ -21,9 +21,13 @@ $(document).ready(function(){
 
 // Scrivere codice qui
 
-
-
-
+$("#invio").click(function(){
+  var messaggioScritto = $("#testo-messaggio").val();
+  var messaggio = $("#messaggio-inviato").clone();
+  messaggio.text(messaggioScritto);
+  $("section").append(messaggio);
+  $("#testo-messaggio").val("");
+})
 
 
 
